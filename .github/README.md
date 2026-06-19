@@ -38,15 +38,21 @@ App patching system for PS4/PS5.
 # Usage
 
 - Start elfldr [(PS4)](https://github.com/ps4-payload-dev/elfldr) [(PS5)](https://github.com/ps5-payload-dev/elfldr), will listen for payload at port 9021
-- Send [patch-bundle-loader-(platform).elf](../../../releases/latest) to port 9021
+- Send [`patch-bundle-loader-(platform).elf`](../../../releases/latest) to port 9021
+  - `patch-bundle-loader-orbis.elf`: for PS4 system
+  - `patch-bundle-loader-prospero.elf`: for PS5 system
+  - If decompression fails, you may use uncompressed version of `patch-bundle-(platform).elf`
 - Extract and upload [patch1.zip](https://github.com/illusionyy/PS-Game-Patch/releases/latest) xml files to `/data/user/patches`
-  - `xml_orbis` for PS4 Patches
-  - `xml_prospero` for PS5 Patches
+  - `xml_orbis` for PS4 Game Patches
+  - `xml_prospero` for PS5 Game Patches
 - Open webpage at `127.0.0.1:23900` or console IP on another device.
 - Apply patches and they should work!
 
 ### Confirmed working firmwares:
-- 3.00 - 12.70
+- PS4:
+  - 9.00 - 12.52
+- PS5:
+  - 3.00 - 12.70
 
 ### Looking for 1080p limit, direct memory and native app clock patch?
 
